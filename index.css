@@ -1,0 +1,496 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #F0ECE5;
+
+}
+.navbar{
+    background-color: #26577C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.logo{
+    margin-left: 25px;
+    color: white;
+    font-size: 25px;
+    align-items: center;
+
+}
+
+.logo p{
+    background-color: #FDFFAB;
+    height: 50px;
+    color: black;
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.menu a:hover{
+    color: #E3651D;
+    border-bottom: 1px solid #E3651D;
+}
+
+.picture{
+    width: 100%;
+    height: 350px;
+    background-image: url(airplane.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-repeat: inherit;
+    /*background-color: aqua;*/
+}
+
+.flights{
+    width: 70%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -100px;
+    margin: -70px auto 40px auto;
+    border: none;
+    background-color: #FFFADD;
+    
+}
+
+.price{
+    display: flex;
+    flex-direction: row;
+    margin: 25px;
+    margin-bottom: 0%;
+}
+
+select{
+    width: 80px;
+    height: 40px;
+    border: none;
+    margin-right: 10px;
+    background-color: #BBBBBB;
+}
+
+
+
+.flights form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.route{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 25px;
+    margin-right: 0px;
+    padding-bottom: 30px;
+}
+
+.input{
+    display: flex;
+    flex-direction: row;
+}
+
+#route-input{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    height: 40px;
+    width: 150px;
+}
+
+
+.date{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-bottom: 30px;
+}
+
+input[type="date"]{
+    width: 100px;
+    height: 45px;
+    border: none;
+    margin-right: 5px;
+    background-color: #BBBBBB;
+}
+
+.passenger{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-left: 5px;
+    padding-bottom: 30px;
+
+}
+
+#passenger{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+#passenger-input{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    height: 40px;
+    width: 50px;
+}
+
+.submit{
+    display: flex;
+    margin-top: 55px;
+    margin-left: 10px;
+    margin-bottom: 0%;
+}
+
+#submit{
+    width: 150px;
+    height: 40px;
+    border: none;
+    color: white;
+    margin-left: 0%;
+    border: none;
+    margin-right: 25px;
+    background-color: red;
+}
+
+#submit:hover{
+    border: 3px solid #BBBBBB;
+}
+
+.view{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 150px;
+}
+
+/*.picture-1{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+.picture-1 img{
+    width: 100%;
+    height: 100%;
+}*/
+
+.picture-2{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 40px;
+}
+
+.picture-2 :hover{
+    box-shadow: #26577C 0px 0px 20px;
+    height: 105%;
+    width: 105%;
+
+}
+
+.our-destinations{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.our-destinations p{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.places{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.destination{
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-1{
+    height: 60%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url(Kumasi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.top-2{
+    height: 60%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url(takoradi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-3{
+    
+    height: 60%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url(tamale.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.down{
+    background-color: #26577C;
+    height: 40%;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-items: center;
+}
+
+.down p{
+    font-size: small;
+    text-align: center;
+}
+
+.down h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+#p-underline{
+    border-bottom: 1px solid black;
+    width : 70%;
+    margin: auto;
+}
+
+.see-more{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.see-more button{
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+
+.see-more a{
+    text-decoration: none;
+    color: red;
+}
+
+.see-more a:hover{
+    color: black;
+    border-bottom: 1px solid #00FFFF;
+}
+
+#schedules {
+    text-decoration: underline;
+}
+
+.others{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.top-others{
+    background-color: white;
+    height: 60%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+#icons{
+    margin-left:30%;
+    margin-top: 40px;
+}
+
+.down-others{
+    background-color: #F0ECE5;
+    height: 40%;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    align-items: center;
+    border-top: #E3651D 3px solid;
+
+    text-align: center;
+}
+
+
+
+.destination-others{
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: #26577C 0px 0px 10px;
+}
+
+.destination-others:hover{
+    box-shadow: #26577C 0px 0px 20px;
+}
+
+
+.info{
+    width: 100%;
+    height: 400px;
+    border: 1px solid cyan;
+    margin: 30px;
+}
+
+.baggage{
+    width: 100%;
+    height: 400px;
+    border: 1px solid cyan;
+    margin-top: 70px;
+}
+
+.baggage img{
+    width: 100%;
+    height: 100%;
+}
+
+.people{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 70px;
+
+}
+
+.person{
+    width: 350px;
+    height: 400px;
+    border: 1px solid cyan;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.banner{
+    width: 80%;
+    height: 250px;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #26577C;
+    color: white;
+    margin-top: 70px;
+    padding: 20px;
+
+}
+
+.row-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    width: 70%;
+    margin: auto;
+
+}
+
+#underline-footer{
+    border-bottom: 1px solid #BBBBBB;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: #BBBBBB;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    width: 70%;
+    margin: auto;
+}
+
+.form a{
+    text-decoration: none;
+    color: #BBBBBB;
+    font-size: small;
+}
+
+.form input[type="Email"]{
+    width: 100px;
+    height: 40px;
+    border: none;
+    margin-right: 10px;
+}
+
+.form input[type="submit"]{
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    border: none;
+    color: white;
+}

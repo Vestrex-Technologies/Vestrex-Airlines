@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vestrex Flights</title>
+    <link rel="stylesheet" href="index.css">
+
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <p>VESTREX AIRLINE <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAldJREFUSEvVlD1oFEEUx3+zF7M7sxERxfgBAaMgEbUQKwVRBBtFRW0CgiJIICJaqBAs7MRWCQhiZSEBQbCwsLGIIoiIgilUIgp+gAgWCTtvN3L3ZMNduFzuLncJKZxm2dn//n/vzXvzDEu8zBL7898AojAMe7Is+1R7IovOwDm3C9XHwHoDtxORi9WQRQHiON6hxeIoxqwom2qhVOqbzLKPFcgsgHPuPKr7FD4D34MgGAd+JEmSP6U6sq7Ozq2lQmEUWFW9XygW+yanpj7MAYRhuKkQBK+BlQ066w8wDVQYN3AaWDNLq3rXp+lAsyOysbWDCleA7nZa2MBIInIKKLZSg8haO2Dgal68eUHG3PfenwG03S4KnXNnUb0GbGgA+u1F8mznmOf6lrqoXNB3wLI6kL9eJFwwIIqi3sCYl81qotAjIt/qZTgrg+VhuGUyy74CWS4Ow3BzIQieA2ub1UFhj4jkQcxZMwDn3FFUH5UVb4FXwPE65sPAOuBExU2hX0RG5gMMonoZ2NgoWgO3EpFLzrmdqL6ZuUyqQ0ma3pz3iHJBHEUHMGZA4VhNUYe9yIWKibX2mYH90++qd3yaDrYEqIjiOO7WUmkMWA188SK91QZxGB7UIHha3nviRQ63BcjFzrkbqA4BJS/SVTuPXBS9x5htqI75NN3eNqCcxU8gqNcp1tp+Aw9ysBdxbQOms7D2IXASY8557+/VmATO2nwA/vIiuxcyKoiiaK8x5rqIHALS2iidc0c6OjpeTExM5NO28T1odpHy5gKSeTR1P7c0ixZiXPnnH4fHzBkv/ILvAAAAAElFTkSuQmCC"/></p>
+        </div>
+        <div class="menu">
+            <p><a href="#">BOOK</a></p>
+            <p><a href="#">ABOUT US</a></p>
+            <p><a href="#">TRAVEL INFO</a></p>
+            <p><a href="#">CONTACT US</a></p>
+            <p><a href="#">MORE</a></p>
+            <p><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAglJREFUSEu1lcurTWEYh58nMtBBUS4TIWHgFiUDR3GKUKYuxYAUhQFl4A8gEzodwoBCUv4AGSmETJASUUpkQA6R++W13qyjfS57r11n73e41rfe53svv9+SNodtzk9dQERMBTYBa4EF5UXuA1eAS+qrZi43CBARY4ELwPoGCQK4DGxTvzQC9QNExGjgLjAX+A6cBrrV55kkImYA+4AdwKjybKf6sx5kIOA8sAV4CaxWHw/1YUTMB64WF5gCHFX3VwIiYh7wEPhV9HmJmv2uGxGxHLgO/ACmq6+HOvy/gojoAXYDx9U9zQwwIi4CmwvIQfVwFeAZMDP7rz5qErACuAbcVLOiQVFbwWcghzxC/dMkYDzwDuhVJ1QBPgJjgA41YZURER3AJ+CtOrEK8KAU1GL1XmX2f2u7tNi2O9kmtasKcAQ4AJxSdzUJOAdsBXrUvVWAWcAT4HeTa9oJ3CiT1q16oNDOpPyBF8Aq9WkdoS0shTYp1a7urBRaaQW1VvENOAkcU1PZ2fOsMq1iOzCyTJozSNXnsOuvad+biBgHpIDWNZjDh8KLDhUt3QgsAlL1K9V83i8a2fW0UqVrgPSer4XD5nbdBk6o7yMidZBCSzvPLewqht1bSxj2D6eE3ALmAOkGy9Q3fZBhA8rZpMhyo2bnfNSzLQWUkMnABrW7pS2qEmRLWtQI0nbAX/OZthnpLYPRAAAAAElFTkSuQmCC"/></a></p>
+        </div>
+    </div>
+
+    <div class="picture">
+
+    </div>
+    <div class="flights">
+        <div class="price">
+            <select name="trip" id="">
+                <option value="">One Way</option>
+                <option value="">Round Trip</option>
+            </select>
+            <select name="price" id="">
+                <option value="">GHS</option>
+                <option value="">USD</option>
+                <option value="">NGN</option>
+            </select>
+        </div>
+
+        <form action="">
+            <div class="route">
+                <p><strong>Route</strong></p>
+                <div class="input">
+                    <input type="text" placeholder="Origin" id="route-input">
+
+                    <input type="text" placeholder="Destination" id="route-input">
+                </div>
+            </div>
+
+            <div class="date">
+                <p><strong>Date</strong></p>
+
+                <input type="date" placeholder="Departure">
+
+            </div>
+
+            <div class="passenger">
+                <p><strong>Passenger</strong></p>
+                <div id="passenger">
+                    <input type="number" placeholder="Adult" id="passenger-input" min="0">
+                    <input type="number" placeholder="Child" id="passenger-input" min="0">
+                    <input type="number" placeholder="infants" id="passenger-input" min="0">
+                </div>
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Search" id="submit">
+            </div>
+        </form>
+    </div>
+
+    <div class="view">
+        <div class="picture-2">
+            <img src="person.png" alt="">
+        </div>
+        <div class="picture-2">
+            <a href=""><img src="person.png" alt=""></a>
+        </div>
+    </div>
+    <div class="our-destinations">
+        <p>Our Destinations</p>
+        <div class="places">
+            <div class="destination">
+                <div class="top-1">
+                    
+                </div>
+                <div class="down">
+                    <div  id="p-underline">
+                        <p>GHANA</p>
+                        <p>Kumasi</p>
+                        <p>Up to 8 flights daily. Book now</p>
+                    </div>
+                    <div>
+                        <h1>From GHC 664*</h1>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="destination">
+                <div class="top-2">
+                    
+                </div>
+
+                <div class="down">
+                    <div  id="p-underline">
+                        <p>GHANA</p>
+                        <p>Takoradi</p>
+                        <p>Up to 8 flights daily. Book now</p>
+                    </div>
+                    <div>
+                        <h1>From GHC 664*</h1>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="destination">
+                <div class="top-3">
+                    <div>
+
+                    </div>
+                    
+                </div>
+
+                <div class="down">
+                    <div  id="p-underline">
+                        <p>GHANA</p>
+                        <p>Tamale</p>
+                        <p>Up to 8 flights daily. Book now</p>
+                    </div>
+                    <div>
+                        <h1>From GHC 888*</h1>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="see-more">
+        <button>See more fares</button>
+        <p><a href="#">*Terms and Conditions apply </a>| <b>Tax Inclusive</b> | <a href="#" id="schedules">See flight schedules</a></p>
+    </div>
+
+    <div class="others">
+        <div class="destination-others">
+            <div class="top-others">
+                <img id="icons" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACQCAYAAADnRuK4AAAAAXNSR0IArs4c6QAACWhJREFUeF7tnV+IZEcVxr9zZ7bn1u2ZdRISkWA0blZFH0QRfNAnfQmI+G8T44MYVBKTqA+SNSayiBgwGjAxEMxKXBX/PGRNhMUgRIigBB8CoggGTAxG2agYzboz3VXdy/Qt54bdzbJhd/tU1emu6jnzfM5Xp77vN909031mCPqlDkQ4QBG92qoOQAFSCKIcUICi7NNmBUgZiHJAAYqyT5sVIGUgygEFKMo+bVaAlIEoBxSgKPu0WQFSBqIcUICi7NPmogDavXv3xVtbW1ejbT9ARHs9cBmAVY3xvA4MCPiHB54C0ZFdu3Y9fPz48WOpPCsCoLquX1MBB0B0HYBeqsvvUJ0xgEMeuNM5dzTWg+wBMsZcQ8CPFZzYqF/Wb0F0rbX2kRjlrAHqG3OrB74Rc0HtvYADRDdZaw+G+pQtQMaYfQQ8FHox7ZvagZaq6r3D4fDRqTvOKMwSoLqu91REz4RcSHsCHCDaqKrq9YPB4N/c7iwBaox5GMCHuZfR+ggHvL/fjkY3cxWyA2i113tTu7T0JPciWh/vwNLy8qWbm5v/4ShlB1BT192P63dwLqG1aRwg7z85HI2+z1HLDyBjHgfwLs4ltDaNAwQcHjp3LUctR4CeBfBaziW0NpkDf7DOvY2jliNAQwAN5xJam8yB/1nnLuKoZQcQZ/gdWru61uu9erK8vBfAB+H9PgDrqbywzrGYYBWnGlJ1kjqw0jTNp+D9bdvvcV0eq6wAxTpYbn/TGPMggPfFXEEBinFvAXqbur4fRDeGXkUBCnVucfqqpq5/AaKrQq6kAIW4tmA9FwO7R8Y8DeCV3KspQFzHFrS+aZqb4P23uddTgLiOLXB9Y8zzAC7hXFEB4ri14LVN03wP3n+Cc00FiOPWgtee/DjwYc41FSCOWwte2+/33+rb9vecaypAHLcWvHZ9fX39xHjMWuGZK0C6txVEpOjeVmOM50w1F4B0b4sT0QVrk+5tZQ+Q7m1dEIjQgiR7W1kDpHtboWww+iL3trIFSPe2GBDElUbtbWUJkO5txRHB7o7Y28oSIN3bYiMQ3xC4t5UdQLq3Fc9CqELI3lZ2AOneVmj88X0he1v5AaR7W/EkBCqE7G3lCJDubQUCkKCNvbeVI0C6t5WAhEAJ9t5WjgCJvrcSaGyxbdIBS+uz98KkByqWhMDBpf2U1leAAoNP1SYdsLS+ApSKhEAd6YCl9RWgwOBTtUkHLK2vAKUiIVBHOmBpfQUoMPhUbdIBS+srQKlICNSRDlhaXwEKDD5Vm3TA0voKUCoSAnWkA5bWV4ACg0/VJh2wtL4ClIqEQB3pgKX1FaDA4FO1SQcsra8ApSIhUEc6YGl9BSgw+FRt0gFL6ytAqUgI1JEOWFpfAQoMPlWbdMDS+gpQKhICdaQDltZXgAKDT9UmHbC0vgKUioRAHemApfUVoMDgU7VJByytrwClIiFQRzpgaX0FKDD4VG3SAUvrK0CpSAjUkQ5YWl8BCgw+VZt0wEz9gXVujXM3BYjjlkAtM2Bw/wgmR5+Ap4bOvZFzTQWI45ZALSfg7nhJgED0S2st67/8KEACUHAkcwLIA593zn2LM78CxHFLoDYngFrvrxiNRn/jXFMB4rglUJsNQEQ/tNZex72iAsR1LHF9JgB1f5N6r7X2n9zrKUBcxxLXZwCQB9H7rbWPhFxNAQpxLWHPvAHywOecc/eFXkkBCnUuUd8cARqB6KPW2iMxV1GAYtxL0DsHgEYADnng6865o7FXUIBiHYzsnwFAmx54rvstM3n/UM+YI8eOHTseOfbpdgUolZOBOtIABY41dZsCNLVVMoUK0AV85b53IxNTvqoKkAIURacCpAApQBwHSv+O4dx1FrWl+6kvomdByXnOUID0KSwKQQVIAVKAOA6U/h3Duessakv3U18DzYISfQ30kgOlf8fMmZeXHV+6nyGPQAMA/VkHIfAb7ZWmrr8IotsB1LO+T+B57L2twHOmbgsB6C8Arpz6hESFKQHq9/tX+bY9COCKROPNRCZkb0t6MDZAxpjHCHiP9GBn66cAyBhzOQH3ANg36/mTnBewt5Xk3POIsAHqG/MFD9wlPVhigHr9ur7FEx0A0Mx69lTnhextpTr7XDpsgFZWVvYuVdXT0oOlAmi1rt/tiQ564A2znjn1eSF7W6lnOFuPDVAn0BjzUwBXSw93pj73Kazf778KbXuvBz4yyznFzgrc2xKb56RwEEB1Xe+piJ6RHi4UoL4x+7f/tfRX5vHTopAnwXtbQvOclg0CqOs2xlxDwGHpAU/pT/MIZIx5JxE9AO/fPKu5ZnBO1N6W9HzBAL34VFbXB0B0h/SQnf75AFpdXb10MpncTcDHZjHLLM+I3duSnjUKoG64fl1/3BN9F8AuyWHPAVBljPksef9VEL1C8vw5aCfZ25KeOxqgbsC6rl9XVdWX4X33CLAsMfTZABlj3kHAAwDeInHeHDWT7m1J3yMJQKeGXFtbu2QymXwIbbuPiPZ44LJUL2RPAdSdsbW1dc8CPV0NJPe2igKIM2zAm4hV0zSfhvdfA3AR56ypar1/tAVuHI1Gz05Vr0UvOpD0EYjjKRcgAL8D8HbOGVPWHgXRzdban09Zr2VnOFASQKmDG4PoLmtt94jWve7QrwAHdiRAHvhV27Y3jMfjmf4yNCCf7Ft2GkB/P/mG5M+yT6aQAXcKQCc8cLdzrvulpy0kmyLGXHiAtj+79JuqbW/YHI//XEQihQ25yAA954FbnHMPFpZJUeMuIkBbHrjXOde9G999flu/BB1YKID06UqQlHNILwpA/yLv9w9Ho5/M3sKdfWLpAE0IuG/oXPdZZ326mgPLJQP022oyuX5w4sSTc/BNjzzpQIkAPU/e3zocjX6gKc7fgZIAagEcrJ27/QVgY/7W6QSdA6UA9ARV1fXD4fCPGlteDuQO0H9BdJu19hCA7UUL/crNgXwB8v47y73elzY2Nl7IzTSd5yUHsgOIgF/T0tJnBoPBnzSo/B3ICaC/emC/c04/apE/N6cnzAGgAby/045G3wQwLsg7HXXOP4W1IPrR9sdJuxfJ7H+1qOnl4cDcHoG6vS7n3BN52KBThDowN4BCB9a+vBxQgPLKo7hpFKDiIstrYAUorzyKm0YBKi6yvAZWgPLKo7hpFKDiIstrYAUorzyKm0YBKi6yvAZWgPLKo7hpFKDiIstrYAUorzyKm0YBKi6yvAb+P/fnj83efscUAAAAAElFTkSuQmCC"/>
+            </div>
+            <div class="down-others">
+                <div>
+                    <p><b>Do you have a complaint?</b></p>
+                </div>
+                <div>
+                    <p>Africa World Airlines investigates and resolves all customer complaints with a high sense of urgency. <a href="">Learn more</a></p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="destination-others">
+            <div class="top-others">
+                <img  id="icons" src="data:image/png;base64,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"/>
+            </div>
+
+            <div class="down-others">
+                <div>
+                    <p><b>How to manage your booking</b></p>
+                </div>
+                <div>
+                    <p>We understand that your plans may change, so feel more at ease when you make a reservation and need to alter it. Find out more. <a href="">Learn more</a></p>
+                </div>
+            </div>
+            
+        </div>
+        <div class="destination-others">
+            <div class="top-others">
+                <img  id="icons" src="data:image/png;base64,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"/>
+            </div>
+
+            <div class="down-others">
+                <div>
+                    <p><b>Checked-in luggages and weight limits</b></p>
+                </div>
+                <div>
+                    <p>Not sure if you should check your bag or bring it on board with you? Familiarize yourself with the restrictions for carry-on luggage. <a href="">Learn more</a></p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="baggage">
+        <img src="baggage.png" alt="">
+    </div>
+
+    <div class="people">
+        <div class="person">
+
+        </div>
+
+        <div class="person">
+
+        </div>
+
+        <div class="person">
+
+        </div>
+    </div>
+
+    <div class="banner">
+        <img src="banner.png" alt="">
+    </div>
+
+    <div class="footer">
+        <div class="row-1" id="underline-footer">
+            <div class="footer-content">
+                <h3>About Us</h3>
+                <p><a href="">Who We Are</a></p>
+                <p><a href="">Careers</a></p>
+                <p><a href="">Media Center</a></p>
+                <p><a href="">Foundation</a></p>
+            </div>
+
+            <div class="footer-content">
+                <h3>Travel</h3>
+                <p><a href="">Travel Information</a></p>
+                <p><a href="">Baggage Requirements</a></p>
+                <p><a href="">Product Classes</a></p>
+                <p><a href="">Conditions of Carriage</a></p>
+            </div>
+
+            <div class="footer-content">
+                <h3>Book</h3>
+                <p><a href="">Book Flights</a></p>
+                <p><a href="">Booking Information</a></p>
+                <p><a href="">Flight Schedules</a></p>
+            </div>
+
+            <div class="footer-content">
+                <h3>Manage</h3>
+                <p><a href="">Refunds</a></p>
+                <p><a href="">AWA Express</a></p>
+            </div>
+        </div>
+
+        <div class="row-1" id="underline-footer">
+            <div class="footer-content">
+                <h3>What to know</h3>
+                <p><a href="">Special Care</a></p>
+                <p><a href="">Visa and Passport</a></p>
+                <p><a href="">At the Airport</a></p>
+                <p><a href="">To and From the Airport</a></p>
+            </div>
+
+            <div class="footer-content">
+                <h3>Our Destination</h3>
+                <p><a href="">Where we fly to</a></p>
+                <p><a href="">Route map</a></p>
+                <p><a href="">Connect flight</a></p>
+            </div>
+
+            <div class="footer-content">
+                <h3>Customer Service</h3>
+                <p><a href="">How to book a flight</a></p>
+                <p><a href="">Lost property</a></p>
+                <p><a href="">Check-in Requirements</a></p>
+                <p><a href="">Change Bookings</a></p>
+            </div>
+
+            <div class="footer-content">
+                <h3>Account</h3>
+                <p><a href="">Log in</a></p>
+                <p><a href="">Corporate Apply</a></p>
+                <p><a href="">ADM Policy</a></p>
+                <p><a href="">Travel Agent Apply</a></p>
+            </div>
+        </div>
+
+        <div class="row-1">
+            <div class="footer-content">
+                <h3>Subscribe to our special offers</h3>
+                <p>For latest fares, offers and news updates</p>
+            </div>
+
+            <div class="footer-content">
+                <h3>Africa World Airlines App</h3>
+                <p>Download for easy accessibility</p>
+            </div>
+
+            <div class="footer-content">
+                <h3>How are we doing?</h3>
+                <p><a href="">Review us on TripAdvisor</a></p>
+            </div>
+
+            <div class="footer-content">
+                <h3>Connect with us</h3>
+                <p>Share your AWA experience</p>
+            </div>
+        </div>
+        <div class="form">
+            <form action="">
+                <p><a href="">Unsubscribe or change your preferences</a></p>
+
+                <input type="Email" placeholder="Email address">
+
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>
