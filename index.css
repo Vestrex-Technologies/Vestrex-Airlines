@@ -465,6 +465,12 @@ input[type="date"]{
     color: #BBBBBB;
 }
 
+.footer-content a:hover{
+    color: #E3651D;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
 .form{
     display: flex;
     flex-direction: row;
