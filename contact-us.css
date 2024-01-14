@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #F0ECE5;
+
+}
+.navbar{
+    background-color: #26577C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.logo{
+    margin-left: 25px;
+    color: white;
+    font-size: 25px;
+    align-items: center;
+
+}
+
+.logo p{
+    background-color: #FDFFAB;
+    height: 50px;
+    color: black;
+}
+
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 25px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.menu a:hover{
+    color: #E3651D;
+    border-bottom: 1px solid #E3651D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #26577C;
+    color: white;
+    margin-top: 70px;
+    padding: 20px;
+
+}
+
+.row-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    width: 70%;
+    margin: auto;
+
+}
+
+#underline-footer{
+    border-bottom: 1px solid #BBBBBB;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.footer-content a{
+    text-decoration: none;
+    color: #BBBBBB;
+}
+
+.footer-content a:hover{
+    color: #E3651D;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    width: 70%;
+    margin: auto;
+}
+
+.form a{
+    text-decoration: none;
+    color: #BBBBBB;
+    font-size: small;
+}
+
+.form input[type="Email"]{
+    width: 100px;
+    height: 40px;
+    border: none;
+    margin-right: 10px;
+}
+
+.form input[type="submit"]{
+    width: 100px;
+    height: 40px;
+    background-color: red;
+    border: none;
+    color: white;
+}
