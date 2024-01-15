@@ -69,6 +69,12 @@ body{
     margin-right: 10%;
 }
 
+.underline{
+    width: 10%;
+    height: 2px;
+    background-color: #E3651D;
+}
+
 .groups{
     display: flex;
     flex-direction: column;

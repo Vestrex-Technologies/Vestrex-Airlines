@@ -48,9 +48,35 @@ body{
 }
 
 
+.top-pic{
+    background-image: url(contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 350px;
+    
+}
 
+.header{
+    width: 50%;
+    margin-left: 80px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
 
+.underline{
+    width: 10%;
+    height: 2px;
+    background-color: #E3651D;
+}
 
+.contact-info{
+    width: 50%;
+    height: 700px;
+    border: 1px solid red;
+    margin-left: 80px;
+
+}
 
 
 
